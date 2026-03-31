@@ -1,0 +1,16 @@
+name: CI Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout codi
+        uses: actions/checkout@v3
+
+      - name: Executar CI
+        run: echo "CI executant-se correctament"
